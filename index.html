@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/contactame.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Mi Portafolio</h1>
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-text">
+            <h2>Hola, soy Ing. Glenn Diamond</h2>
+            <p>Desarrollador web creativo y apasionado por el diseño moderno.</p>
+
+            <a href="#proyectos" class="btn">Ver proyectos</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="img/brady_profile.jpg" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <h2>Sobre mí</h2>
+
+        <p>
+            Soy estudiante y desarrollador web. Me gusta crear páginas modernas,
+            dinámicas y fáciles de usar utilizando HTML, CSS y JavaScript.
+            Tengo 26 años y me apasiona el desarrollo de software y la tecnología.
+            Disfruto crear sitios web creativos e interactivos que brinden una buena
+            experiencia a los usuarios. Vivo en Utila, Honduras, y siempre busco
+            aprender nuevas herramientas y mejorar mis habilidades como desarrollador.
+        </p>
+
+        <div class="skills">
+            <div class="skill">
+                <span>HTML</span>
+                <div class="bar">
+                    <div class="html"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>CSS</span>
+                <div class="bar">
+                    <div class="css"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="bar">
+                    <div class="js"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+        <h2>Mis proyectos</h2>
+
+        <div class="project-container">
+
+            <div class="card">
+                <img src="img/github_logo.png" alt="">
+                <h3>Proyecto en GitHub</h3>
+                <p>Este proyecto fue desarrollado utilizando HTML, CSS y JavaScript.
+                    En GitHub se puede encontrar todo el código fuente, la estructura
+                    del proyecto y las funciones utilizadas para crear la página web.
+                </p>
+                <a href="https://github.com/JeremyFabrizioPerdomoM/GrupoA.git" target="_blank">
+                    <button>Ver más</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="img/internet_logo.png" alt="">
+                <h3>Proyecto en GitHub Pages</h3>
+                <p>
+                    Esta versión del proyecto está publicada en GitHub Pages para que
+                    cualquier persona pueda visualizar la página funcionando en línea.
+                    El sitio incluye un diseño moderno, animaciones suaves y una interfaz responsiva.
+                </p>
+                <a href="https://jeremyfabrizioperdomom.github.io/GrupoA/index.html" target="_blank">
+                    <button>Ver más</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="img/youtube_logo.png" alt="">
+                <h3>Explicación del Proyecto</h3>
+                <p>
+                    En este video de YouTube se explica cómo utilizar la página web,
+                    navegar entre las secciones y entender las funciones principales
+                    del proyecto paso a paso de manera sencilla.
+                </p>
+                <a href="https://youtu.be/UvRaqJ7-JDY?si=1c7u5pc-y63ffvcu" target="_blank">
+                    <button>Ver más</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+
+        <form id="contactoForm" class="contacto-form" method="GET" autocomplete="on" novalidate>
+            <h3>Envíanos un mensaje</h3>
+
+            <input type="text" placeholder="Nombre" id="name" name="name">
+            <div id="nombreError" class="error-text"></div>
+
+            <input type="email" placeholder="Tu correo" id="email" name="email">
+            <div id="emailError" class="error-text"></div>
+
+            <textarea class="mensaje-box" placeholder="Tu mensaje" id="mensaje" name="mensaje"></textarea>
+            <div id="mensajeError" class="error-text"></div>
+
+            <button type="submit" id="btnEnviar">Enviar</button>
+            <p id="mensaje-mandado"></p>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>© 2026 - Mi Portafolio | Diseñado por Glenn Diamond</p>
+    </footer>
+
+</body>
+</html>
