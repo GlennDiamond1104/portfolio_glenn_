@@ -1,0 +1,267 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+header{
+  background: #111827;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+/*ERRORES*/
+.error {
+    border: 2px solid #e74c3c !important;
+    background-color: #ffecec;
+}
+
+.error-text {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    width: 90%;
+    text-align: left;
+}
+
+/*VALIDAR*/
+.valid {
+    border: 2px solid #2ecc71 !important;
+    background-color: #ecfff1;
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1{
+  color: #38bdf8;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover{
+  color: #38bdf8;
+}
+
+.hero{
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text{
+  max-width: 500px;
+}
+
+.hero-text h2{
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero-text p{
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.btn{
+  display: inline-block;
+  background: #38bdf8;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+}
+
+.hero-image img{
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+}
+
+.about{
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.about h2{
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.skills{
+  margin-top: 30px;
+}
+
+.skill{
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.bar{
+  background: #1e293b;
+  height: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar div{
+  height: 100%;
+  background: #38bdf8;
+}
+
+.html{
+  width: 80%;
+}
+
+.css{
+  width: 65%;
+}
+
+.js{
+  width: 60%;
+}
+
+.projects{
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.projects h2{
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.project-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card{
+  background: #1e293b;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}
+
+.card img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3{
+  margin: 15px 0;
+}
+
+.card button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #38bdf8;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact{
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.contact h2{
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+form{
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea{
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+textarea{
+  resize: none;
+  height: 150px;
+}
+
+form button{
+  padding: 15px;
+  border: none;
+  background: #38bdf8;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+footer{
+  background: #111827;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+@media(max-width: 900px){
+
+  nav{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero{
+    text-align: center;
+    gap:30px;
+  }
+
+  .hero-text h2{
+    font-size: 35px;
+  }
+
+}
